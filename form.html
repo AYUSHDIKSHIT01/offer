@@ -1,0 +1,37 @@
+<html>
+    <head>
+    <title>form</title>
+    </head>
+    <body>
+<form onsubmit="return validate()" action="msg.html">
+
+<input id="1" placeholder="username" type="text">
+<br><br>
+<input id="2" placeholder="password" type="password">
+<br>
+<br>
+<button type="submit">submit</button>
+
+
+
+
+</form>
+<script type="text/javascript">
+
+function validate()
+{
+var user=document.getElementById("1");
+var pass = document.getElementById("2");
+if(user.value=="" || pass.value=="")
+{
+    alert();
+    return false;
+}
+else
+{
+    true;
+}
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>
+            form 2
+        </title>
+    </head>
+    <body>
+        <form onsubmit="return doit();" action="msg.html">
+    <input id="l" placeholder="username" type="text">Username</input><br><br>
+    <label id="3" style="color:crimson;visibility: hidden;">invalid</label>
+    <input id="m" placeholder="password" type="password">password<imput>
+  
+<br>
+<button type="submit"> Submit</button>
+</form>
+    </body>
+
+
+</html>
+
+
+
+<script type="text/javascript">
+function doit()
+{
+var a=document.getElementById("l");
+var p=document.getElementById("m");
+
+if(a.value.trim()=="")
+{
+a.style.border="solid 3px red";
+document.getElementById("3").style.visibility="visible";
+alert("blank username");
+return false;
+}
+else if(p.value.trim()=="")
+{
+    alert("blank password");
+return false; 
+}
+else if(p.value.trim().length<6)
+{
+    alert("short password");
+return false;
+}
+else 
+true;
+
+
+
+
+}
+
+
+</script>
